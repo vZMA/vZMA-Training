@@ -369,7 +369,7 @@ const EM = {
   async sendTrainerAssignedStudent(toEmail, studentName, trainerName, trainingType, cid) {
     trainingType = this._decode(trainingType);
     const expires = Date.now() + (96 * 60 * 60 * 1000); // 96 hours from now
-    const threadUrl = `https://robbypark.github.io/vZMA-Training/create-thread.html?cid=${cid}&trainer=${encodeURIComponent(trainerName)}&type=${encodeURIComponent(trainingType)}&expires=${expires}`;
+    const threadUrl = `https://vzma.github.io/vZMA-Training/create-thread.html?cid=${cid}&trainer=${encodeURIComponent(trainerName)}&type=${encodeURIComponent(trainingType)}&expires=${expires}`;
 
     const body = `
       <p style="margin:0 0 16px;font-size:15px;color:#334155;line-height:1.6;">Hello <strong>${studentName}</strong>,</p>
