@@ -1312,7 +1312,7 @@ tr.drag-over td { border-top: 2px solid var(--blue-400); }
                 <div class="exam-card-title" style="flex:1;">${!prereqsMet ? '🔒 ' : ''}${ex.title}</div>
                 ${hasPassed ? '<span style="background:#dcfce7;color:#16a34a;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:20px;border:1px solid #bbf7d0;">✓ Passed</span>' : ''}
               </div>
-              <div class="text-muted" style="font-size:.875rem;margin-top:4px;">${!prereqsMet ? `<span style="color:#f59e0b;font-size:.8rem;">⚠ Requires: ${prereqNames.join(', ')}</span>` : (ex.description || 'No description')}</div>
+              <div class="text-muted" style="font-size:.875rem;margin-top:4px;">${!prereqsMet ? `<span style="color:#f59e0b;font-size:.8rem;">⚠ Requires: ${prereqNames.join(', ')}</span>` : (examDescriptionText(ex) || 'No description')}</div>
               <div class="exam-card-meta">
                 <span class="exam-meta-chip">${ex.time_limit ? ex.time_limit + ' min' : 'No time limit'}</span>
                 <span class="exam-meta-chip">Pass: ${ex.passing_grade}%</span>
@@ -1346,9 +1346,9 @@ tr.drag-over td { border-top: 2px solid var(--blue-400); }
         return;
       }
 
-      // Shuffle questions
+      // Shuffle questions unless the exam is set to a fixed order (questions arrive sorted by sort_order)
       currentExam = exam;
-      currentQuestions = shuffleArray([...questions]);
+      currentQuestions = examRandomizesQuestions(exam) ? shuffleArray([...questions]) : [...questions];
 
       // Check for saved progress
       const saved = loadProgress(examId);

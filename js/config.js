@@ -46,6 +46,17 @@ const EXAM_CATEGORIES = [
   { id: 'training', label: 'Training Exams' },
 ];
 
+// Exams shuffle their questions by default. Putting [NR] ("not randomized")
+// anywhere in an exam's description keeps the questions in builder order.
+const NR_TAG = /\s*\[NR\]\s*/gi;
+function examRandomizesQuestions(exam) {
+  return !/\[NR\]/i.test(exam?.description || '');
+}
+// Description with the [NR] tag removed, for showing to students
+function examDescriptionText(exam) {
+  return (exam?.description || '').replace(NR_TAG, ' ').trim();
+}
+
 // ============================================================
 // Supabase REST client
 // ============================================================
