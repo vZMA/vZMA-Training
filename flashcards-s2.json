@@ -161,33 +161,33 @@
     },
     {
       "id": 1778021440255.1184,
-      "term": "What segment of the VFR traffic pattern is N535PT depicted? ",
+      "term": "What segment of the VFR traffic pattern is this aircraft on for RY27?",
       "definition": "Downwind",
-      "image": "https://i.gyazo.com/599cf35ca639c28258d97f0a3aede564.jpg"
+      "image": "https://iili.io/o99UwF4.jpg"
     },
     {
       "id": 1778021440255.5696,
-      "term": "What segment of the VFR traffic pattern is N535PT depicted? ",
+      "term": "What segment of the VFR traffic pattern is this aircraft on for RY27?",
       "definition": "Base",
       "image": "https://iili.io/o99UvA7.jpg"
     },
     {
       "id": 1778021440255.562,
-      "term": "What segment of the VFR traffic pattern is N535PT depicted? ",
+      "term": "What segment of the VFR traffic pattern is this aircraft on for RY27?",
       "definition": "Crosswind",
-      "image": "https://i.gyazo.com/0128a83adab795b5f59811af60a14a4b.jpg"
+      "image": "https://iili.io/o99UOS2.jpg"
     },
     {
       "id": 1778021440255.458,
-      "term": "What segment of the VFR traffic pattern is N535PT depicted? ",
+      "term": "What segment of the VFR traffic pattern is this aircraft on for RY27?",
       "definition": "Final",
-      "image": "https://i.gyazo.com/b6d783257985b78082d944a9d3ec5ce7.jpg"
+      "image": "https://iili.io/o99yHfp.png"
     },
     {
       "id": 1778021440255.6711,
-      "term": "What segment of the VFR traffic pattern is N535PT depicted? ",
+      "term": "What segment of the VFR traffic pattern is this aircraft on for RY27?",
       "definition": "Departure leg",
-      "image": "https://i.gyazo.com/ad57326f360a1d6a5f68c717861abddd.jpg"
+      "image": "https://iili.io/o99pysR.png"
     },
     {
       "id": 1778021440255.7812,
@@ -455,9 +455,9 @@
     },
     {
       "id": 1778021440255.478,
-      "term": "Can LAHSO be used in this case? ",
-      "definition": "Yes",
-      "image": "https://i.gyazo.com/384b929edaac1262dcdaaeb42bb6078a.png"
+      "term": "Can LAHSO be used in this case: KMIA 132153Z 09008KT 1/2SM FG VV002 18/18 A2992",
+      "definition": "No",
+      "image": ""
     },
     {
       "id": 1778021440255.7258,
